@@ -6,15 +6,22 @@
 	<link rel="stylesheet" href="assets/css/perfil.css">
 </head>
 <body>
-	<form>
+	<form onsubmit="return false;">
 		<div id="contenedor-textA">
 			<textarea name="" id="mensaje_actual" cols="30" rows="10"></textarea>
 			<select name="" id="estado">
-				<option value="">publico</option>
-				<option value="">privado</option>
+				<option value="publico">publico</option>
+				<option value="privado">privado</option>
 			</select>
-			<button>publicar</button>
+			<button id="publicar">publicar</button>
 		</div>
 	</form>
+	<br><a href="#" id="publico">Publico</a>
+	<label for="">    </label>
+	<a href="#" id="privado">Privado</a><br>
+	<div id="contenedorPost">
+		
+	</div>
+	<script src="assets/js/perfil.js"></script>
 </body>
 </html>
