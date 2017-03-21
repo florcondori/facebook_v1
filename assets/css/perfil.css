@@ -1,10 +1,20 @@
 #contenedor-textA{
-width:400px;
-height:250px;
-border-radius:4px;
-border: 1px solid #848484;
+	width:400px;
+	height:250px;
+	border-radius:4px;
+	border: 1px solid #848484;
 }
 #mensaje_actual{
-width:350px;
-height:200px;
+	width:350px;
+	height:200px;
+}
+.div-post{
+	width:400px;
+	height: 80px;
+	border-radius:4px;
+	border: 1px solid #848484;
+	margin: 10px;
+}
+.ocultar{
+	display: none;
 }
