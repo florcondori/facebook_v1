@@ -7,7 +7,8 @@ window.addEventListener('load',function(){
 	var id = 0;
 	var arrayPost = [];
 
-	publicar.addEventListener('click',function(){
+	publicar.addEventListener('click',function(e){
+		e.preventDefault();
 		var mensaje = document.getElementById('mensaje_actual').value;
 		var estado = document.getElementById('estado').value;
 		id++;
@@ -16,8 +17,9 @@ window.addEventListener('load',function(){
 		arrayPost.push(mensajeActual);
 		console.log(arrayPost);
 		contenedorPost.appendChild(mensajeActual.crearPost());
-				
-				
+
+		document.getElementById('formulario').reset();
+
 	});
 	
 	publico.addEventListener('click', function(event){
